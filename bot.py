@@ -1,3 +1,4 @@
+from keep_alive import keep_alive
 import os
 import re
 import logging
@@ -242,4 +243,5 @@ def main() -> None:
     application.run_polling()
 
 if __name__ == "__main__":
+    keep_alive()
     main()
